@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Box</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-box {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      width: 300px;
+    }
+
+    .form-box input, .form-box select {
+      width: 100%;
+      padding: 8px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .form-box label {
+      font-weight: bold;
+    }
+
+    .form-box button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007BFF;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .form-box button:hover {
+      background-color: #0056b3;
+    }
+
+    .gender {
+      display: flex;
+      gap: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-box">
+    <form>
+      <label>NAME:</label>
+      <input type="text" name="name" required>
+
+      <label>EMAIL:</label>
+      <input type="email" name="email" required>
+
+      <label>STUDENT ID:</label>
+      <input type="text" name="student_id" required>
+
+      <label>PASSWORD:</label>
+      <input type="password" name="password" required>
+
+      <label>GENDER:</label>
+      <div class="gender">
+        <label><input type="radio" name="gender" value="male"> MALE</label>
+        <label><input type="radio" name="gender" value="female"> FEMALE</label>
+      </div>
+
+      <label>CHOOSE A SEMESTER:</label>
+      <select name="semester">
+        <option>1 SEMESTER</option>
+        <option>2 SEMESTER</option>
+        <option>3 SEMESTER</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
